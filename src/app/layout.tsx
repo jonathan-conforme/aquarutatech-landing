@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     url: "https://aquarutatech.com",
     images: [
       {
-        url: "/icon-512x512.png",
+        url: "https://aquarutatech.com/images/AquaRuta.png",
         width: 1200,
         height: 630,
         alt: "AquaRutaTech - Software para distribuidoras de agua",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: "AquaRutaTech | Software para Distribuidoras de Agua",
     description:
       "Software especializado para empresas distribuidoras de agua en Ecuador.",
-    images: ["/icon-512x512.png"],
+   images: ["https://aquarutatech.com/images/AquaRuta.png"],
   },
 };
 
