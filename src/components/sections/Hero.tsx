@@ -25,8 +25,13 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <Button>
+            <Button><a
+                href="https://wa.me/593980659712?text=Hola,%20quiero%20probar%20el%20Software%20AquaRutaTech.%20Me%20gustaría%20recibir%20más%20información."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               Comenzar prueba gratuita
+              </a>
             </Button>
 
             <Button variant="secondary">
