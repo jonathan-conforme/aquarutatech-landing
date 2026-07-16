@@ -26,7 +26,7 @@ export default function Footer() {
                 />
               </div>
               <span className="text-xl font-bold text-white tracking-tight">
-                Aqua<span className="text-blue-500">Ruta</span>
+                Aqua<span className="text-blue-500">RutaTech</span>
               </span>
             </div>
             <p className="text-sm leading-6 text-slate-400">
@@ -46,9 +46,7 @@ export default function Footer() {
               <li>
                 <a href="#pricing" className="hover:text-blue-400 transition-colors">Planes y Precios</a>
               </li>
-              <li>
-                <a href="#testimonios" className="hover:text-blue-400 transition-colors">Testimonios</a>
-              </li>
+              <li><a href="/nosotros" className="hover:text-blue-400 transition-colors">Sobre el fundador</a></li>
             </ul>
           </div>
 
@@ -86,7 +84,7 @@ export default function Footer() {
             </p>
             <div className="mt-4">
               <a
-                href="https://wa.me/593900000000?text=Hola,%20solicito%20información%20sobre%20el%20software%20AquaRuta"
+                href="https://wa.me/593980659712?text=Hola,%20solicito%20información%20sobre%20el%20software%20AquaRuta"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl bg-slate-800 border border-slate-700 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700 hover:text-blue-400 transition-all shadow-sm"
@@ -104,8 +102,10 @@ export default function Footer() {
           <p className="text-slate-500">
             &copy; {currentYear} AquaRuta. Todos los derechos reservados. Diseñado para distribuidoras de agua en Ecuador.
           </p>
-          <div className="flex gap-4 text-slate-500">
-            <span>RUC: 09XXXXXXXX001</span>
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 text-slate-500">
+            <span className="font-mono">RUC: 0953832805001</span>
+            <span className="hidden sm:inline">|</span>
+            <span>Ing. Jonathan Conforme</span>
           </div>
         </div>
       </Container>

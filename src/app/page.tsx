@@ -18,6 +18,7 @@ import Pricing from '@/components/sections/pricing/Pricing';         // Tus plan
 import FAQ from '@/components/sections/FAQ';                 // Preguntas frecuentes (Oro para SEO)
 import CTA from '@/components/sections/CTA';
 import WhatsappFloating from "@/components/ui/WhatsappFloating";                 // Cierre final para que se registren
+import Founder from '@/components/sections/Founder';
 
 export default function LandingPage() {
   return (
@@ -28,20 +29,34 @@ export default function LandingPage() {
 
       {/* 2. Cuerpo Principal de la Landing Page */}
       <main>
+       <section id="hero">
         <Hero />
+      </section>
         <Logos />
         <Problems />
         <Benefits />
+        <section id="caracteristicas">
         <Features />
+      </section>
         
         {/* Bloque enfocado en el Admin y el Chofer */}
-        <Dasboard />
+        <section id="dashboard">
+          <Dasboard />
+        </section>
         <EmployeePanel />
         
+        <section id="pricing">
         <Pricing />
+      </section>
       {/*  <Testimonials /> implementar cuadno tenga testimonials */}
+        <section id="faq">
         <FAQ />
+      </section>
+        <section id="cta">
         <CTA />
+      </section>
+       
+       
       </main>
 
       {/* 3. Footer global */}
