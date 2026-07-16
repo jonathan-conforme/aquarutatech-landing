@@ -6,7 +6,7 @@ import { Plan } from "./types";
 
 interface Props {
   plan: Plan;
-  isAnnual: boolean;
+  isAnnual?: boolean;
 }
 
 export default function PricingCard({ plan, isAnnual }: Props) {
