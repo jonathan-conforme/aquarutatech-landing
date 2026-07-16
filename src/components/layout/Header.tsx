@@ -75,19 +75,15 @@ export default function Header() {
 
           {/* Botones de Acción Desktop */}
           <div className="hidden items-center gap-4 md:flex">
-            <Link
-              href="http://127.0.0.1:8000/login"
-              className="text-sm font-medium text-[var(--color-muted)] transition-colors hover:text-[var(--color-foreground)]"
-            >
-              Iniciar sesión
-            </Link>
-            <Button><a
-                href="https://wa.me/593980659712?text=Hola,%20quiero%20probar%20el%20Software%20AquaRutaTech.%20Me%20gustaría%20recibir%20más%20información."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Prueba gratis
-              </a></Button>
+
+            {/* Botón de Acción Desktop - Ahora único y destacado */}
+            <div className="hidden items-center md:flex">
+              <Button className="px-5 py-2.5 text-sm font-semibold">
+                <a href={"https://app.aquarutatech.com/login"} target="_blank" rel="noopener noreferrer">
+                  Ir a la Plataforma
+                </a>
+              </Button>
+            </div>
           </div>
 
           {/* Botón Menú Móvil (Hamburguesa) - UI/UX: Accesible con estados ARIA */}
@@ -145,20 +141,10 @@ export default function Header() {
           ))}
 
           <div className="pt-4 flex flex-col gap-4">
-            <Link
-              href="https://app.aquaruta.com/login"
-              onClick={() => setIsOpen(false)}
-              className="flex h-11 items-center justify-center rounded-xl text-md font-medium border border-[var(--color-border)] text-[var(--color-foreground)]"
-            >
-              Iniciar sesión
-            </Link>
+
             <Button className="w-full h-11">
-              <a
-                href="https://wa.me/593980659712?text=Hola,%20quiero%20probar%20el%20Software%20AquaRutaTech.%20Me%20gustaría%20recibir%20más%20información."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Prueba gratis
+              <a href={"https://app.aquarutatech.com/login"} target="_blank" rel="noopener noreferrer">
+                Plataforma
               </a>
             </Button>
           </div>

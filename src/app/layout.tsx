@@ -41,6 +41,15 @@ export const metadata: Metadata = {
   // ¡Perfecto! Ya está activo apuntando al nuevo dominio
   metadataBase: new URL("https://aquarutatech.com"),
 
+ icons: {
+    icon: [
+      { url: "https://aquarutatech.com/icons/icon-512x512.png", type: "image/png" }
+    ],
+    apple: [
+      { url: "https://aquarutatech.com/icons/icon-512x512.png", type: "image/png" }
+    ],
+  },
+
   openGraph: {
     title: "AquaRutaTech | Software para Distribuidoras de Agua",
     description:

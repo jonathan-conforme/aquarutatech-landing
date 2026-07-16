@@ -21,5 +21,9 @@ export interface Plan {
     cash: boolean;
     purchases: boolean;
     payroll: boolean;
+    offline: boolean;
+    electronic_invoicing: boolean;
+    priority_support: boolean;
+
   };
 }

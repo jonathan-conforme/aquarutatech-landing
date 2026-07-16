@@ -26,6 +26,7 @@ export const plans: Plan[] = [
       cash: true,
       purchases: true,
       payroll: false,
+      offline: false,
     },
   },
   {
@@ -49,6 +50,8 @@ export const plans: Plan[] = [
       cash: true,
       purchases: true,
       payroll: false,
+      offline: false,
+      electronic_invoicing: false,
     },
   },
   {
@@ -70,6 +73,8 @@ export const plans: Plan[] = [
       cash: true,
       purchases: true,
       payroll: true,
+      offline: false,
+      electronic_invoicing: false,
     },
   },
   {
@@ -84,6 +89,8 @@ export const plans: Plan[] = [
       clients: "Ilimitados",
       products: "Ilimitados",
       routes: "Ilimitadas",
+      
+      
     },
     modules: {
       routes: true,
@@ -91,6 +98,8 @@ export const plans: Plan[] = [
       cash: true,
       purchases: true,
       payroll: true,
+      offline: false,
+      electronic_invoicing: false,
     },
   },
 ];

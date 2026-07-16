@@ -9,7 +9,7 @@ export default function Founder() {
       <Container>
         <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-12 border border-slate-100 shadow-sm">
           <div className="grid gap-8 md:grid-cols-12 items-center">
-            
+
             {/* Lado Izquierdo: Foto/Avatar & Título */}
             <div className="md:col-span-4 flex flex-col items-center text-center">
               {/* Círculo para foto o iniciales */}
@@ -19,15 +19,15 @@ export default function Founder() {
                   <Award size={16} />
                 </div>
               </div>
-              
+
               <h3 className="text-lg font-bold text-slate-900 leading-tight">
-                Ing. Jonathan conforme 
+                Ing. Jonathan conforme
               </h3>
               <p className="text-sm font-semibold text-blue-600 mt-1">
-                Fundador & Ingeniero en TIC
+                Fundador & Ingeniero en Tecnologias de la Información
               </p>
               <p className="text-xs text-slate-400 mt-0.5">
-                Soporte y Desarrollo de Software
+                Soporte y Desarrollo de Software full-stack
               </p>
             </div>
 
@@ -37,9 +37,9 @@ export default function Founder() {
                 <ShieldCheck className="text-blue-500" size={20} />
                 Garantía de Confianza Profesional
               </h4>
-              
+
               <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-                Como Ingeniero en TIC, diseñé Aqua<strong className="text-sm font-semibold text-blue-600 mt-1">RutaTech</strong> bajo altos estándares de seguridad y eficiencia con un único propósito: digitalizar y proteger el trabajo diario de las distribuidoras en Ecuador. Aquí no tratas con bots extranjeros; cuentas con respaldo técnico local, directo y facturación electrónica formal.
+                Como Ingeniero en Tecnologias de la Información, diseñé Aqua<strong className="text-sm font-semibold text-blue-600 mt-1">RutaTech</strong> bajo altos estándares de seguridad y eficiencia con un único propósito: digitalizar y proteger el trabajo diario de las distribuidoras en Ecuador. Aquí no tratas con bots extranjeros; cuentas con respaldo técnico local, directo y facturación electrónica formal.
               </p>
 
               {/* Bloque Legal / RUC */}
@@ -51,6 +51,10 @@ export default function Founder() {
                 <div className="text-xs text-slate-500">
                   <span className="font-semibold text-slate-700 block">Ubicación y Cobertura:</span>
                   Servicio activo para todo el Ecuador 🇪🇨
+                </div>
+                <div className="text-xs text-slate-500">
+                  <span className="font-semibold text-slate-700 block">Trayectoria:</span>
+                  Lanzamiento oficial: <span className="font-medium text-slate-600">2026</span>
                 </div>
               </div>
             </div>

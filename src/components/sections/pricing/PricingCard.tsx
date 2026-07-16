@@ -1,4 +1,3 @@
-// src/sections/PricingCard.tsx
 import React from 'react';
 import Button from "@/components/ui/Button";
 import { Check, X } from "lucide-react";
@@ -15,6 +14,17 @@ export default function PricingCard({ plan, isAnnual }: Props) {
   // Selecciona el precio correspondiente
   const currentPrice = isAnnual ? plan.priceAnnual : plan.priceMonthly;
   const periodText = isAnnual ? "USD / al año" : "USD / al mes";
+
+  // --- CONSTRUCCIÓN DEL ENLACE DE WHATSAPP DINÁMICO ---
+  const WHATSAPP_NUMBER = "593980659712"; 
+  const planName = plan.name;
+  const planPeriod = isAnnual ? "Anual" : "Mensual";
+  
+  // Texto personalizado que detalla el plan, período y precio
+  const textMessage = `Hola, me interesa adquirir el *Plan ${planName}* en su modalidad *${planPeriod}* por $${currentPrice} ${isAnnual ? 'al año' : 'al mes'}. Me gustaría recibir más información para activarlo.`;
+  
+  // Codificamos el mensaje para que sea válido dentro de una URL
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(textMessage)}`;
 
   return (
     <article
@@ -71,16 +81,23 @@ export default function PricingCard({ plan, isAnnual }: Props) {
           </span>
         </div>
 
-        {/* Botón de Acción */}
+        {/* Botón de Acción con Redirección Personalizada */}
         <div className="mt-6">
           <Button 
             className={`w-full py-2.5 rounded-xl font-medium transition-all duration-200 shadow-sm ${
               plan.popular 
-                ? "bg-blue-600 text-white hover:bg-blue-700" 
-                : "border border-slate-200 bg-white text-slate-700 hover:bg-slate-50"
+                ? "bg-blue-600 text-white hover:bg-blue-800" 
+                : "border border-slate-200 text-black hover:bg-slate-500"
             }`}
           >
-            Comprar plan
+            <a 
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-full items-center justify-center"
+            >
+              Comprar plan
+            </a>
           </Button>
         </div>
 
@@ -118,6 +135,7 @@ export default function PricingCard({ plan, isAnnual }: Props) {
               {typeof plan.limits.products === "number" ? `Hasta ${plan.limits.products} productos` : plan.limits.products}
             </span>
           </li>
+          
         </ul>
 
         {/* Línea Divisoria */}
@@ -130,6 +148,8 @@ export default function PricingCard({ plan, isAnnual }: Props) {
           <FeatureItem enabled={plan.modules.cash} text="Cierre de caja" />
           <FeatureItem enabled={plan.modules.purchases} text="Módulo de compras" />
           <FeatureItem enabled={plan.modules.payroll} text="Módulo de nómina" />
+          <FeatureItem enabled={plan.modules.offline} text="Modo offline" />
+          <FeatureItem enabled={plan.modules.electronic_invoicing} text="Facturación electrónica" />
         </ul>
       </div>
     </article>

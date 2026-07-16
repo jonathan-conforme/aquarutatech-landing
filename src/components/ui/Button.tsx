@@ -17,7 +17,7 @@ export default function Button({
         primary:
             "bg-[var(--color-primary)] text-white hover:bg-sky-600 shadow-sm",
         secondary:
-            "border border-slate-200 bg-white text-slate-900 hover:bg-[var(--color-primary-hover)]",
+            "border border-slate-200 bg-white text-slate-900 hover:bg-[var(--color-secondary-hover)]",
     };
 
     return (

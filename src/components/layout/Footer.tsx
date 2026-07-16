@@ -105,7 +105,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 text-slate-500">
             <span className="font-mono">RUC: 0953832805001</span>
             <span className="hidden sm:inline">|</span>
-            <span>Ing. Jonathan Conforme</span>
+            <span>Founder: Ing. Jonathan Conforme</span>
           </div>
         </div>
       </Container>
