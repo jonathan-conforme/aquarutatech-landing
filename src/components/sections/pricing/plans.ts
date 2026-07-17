@@ -27,6 +27,7 @@ export const plans: Plan[] = [
       purchases: true,
       payroll: false,
       offline: false,
+      electronic_invoicing: false,
     },
   },
   {
