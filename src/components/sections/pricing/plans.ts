@@ -28,6 +28,7 @@ export const plans: Plan[] = [
       payroll: false,
       offline: false,
       electronic_invoicing: false,
+      priority_support:false,
     },
   },
   {
@@ -53,6 +54,7 @@ export const plans: Plan[] = [
       payroll: false,
       offline: false,
       electronic_invoicing: false,
+      priority_support:true,
     },
   },
   {
@@ -76,6 +78,7 @@ export const plans: Plan[] = [
       payroll: true,
       offline: false,
       electronic_invoicing: false,
+      priority_support:true,
     },
   },
   {
@@ -101,6 +104,7 @@ export const plans: Plan[] = [
       payroll: true,
       offline: false,
       electronic_invoicing: false,
+      priority_support:true,
     },
   },
 ];
