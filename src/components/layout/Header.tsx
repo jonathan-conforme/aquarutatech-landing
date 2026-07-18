@@ -9,13 +9,13 @@ import Container from "../ui/Container";
 import Button from "../ui/Button";
 
 const navigation = [
-  { name: "Inicio", href: "/#hero" },
-  { name: "Características", href: "/#caracteristicas" },
-  { name: "Dashboard", href: "/#dashboard" },
-  { name: "Planes", href: "/#pricing" },
-  { name: "FAQ", href: "/#faq" },
+  { name: "Inicio", href: "/" },
+  { name: "Características", href: "/caracteristicas" },
+  { name: "Dashboard", href: "/dashboard" },
+  { name: "Planes", href: "/pricing" },
+  { name: "FAQ", href: "/faq" },
   { name: "Nosotros", href: "/nosotros" },
-  { name: "Contacto", href: "/#cta" },
+  { name: "Contacto", href: "/contact" },
 ];
 
 export default function Header() {

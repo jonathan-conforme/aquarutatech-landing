@@ -35,26 +35,13 @@ export default function LandingPage() {
         <Logos />
         <Problems />
         <Benefits />
-        <section id="caracteristicas">
         <Features />
-      </section>
-        
-        {/* Bloque enfocado en el Admin y el Chofer */}
-        <section id="dashboard">
-          <Dasboard />
-        </section>
-        <EmployeePanel />
-        
-        <section id="pricing">
-        <Pricing />
-      </section>
-      {/*  <Testimonials /> implementar cuadno tenga testimonials */}
-        <section id="faq">
-        <FAQ />
-      </section>
-        <section id="cta">
+        <Dasboard />        
+        <EmployeePanel />       
+        <Pricing />  
+        <FAQ />    
         <CTA />
-      </section>
+  
        
        
       </main>

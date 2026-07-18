@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
+import StructuredData from "@/components/seo/StructuredData";
 
 export const metadata: Metadata = {
   title: {
@@ -37,6 +38,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+
+  alternates: {
+  canonical: "https://aquarutatech.com",
+},
 
   // ¡Perfecto! Ya está activo apuntando al nuevo dominio
   metadataBase: new URL("https://aquarutatech.com"),
@@ -85,6 +90,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className="antialiased">
+           <StructuredData />
         {children}
       </body>
     </html>

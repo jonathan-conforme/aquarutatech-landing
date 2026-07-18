@@ -69,7 +69,7 @@ export default function Dashboard() {
           {/* Imagen */}
 
           <Image
-                src="/images/lapto1.png"
+                src="/images/lapto.png"
                 alt="Panel del administrador de AquaRuta"
                 width={640}
                 height={480}
