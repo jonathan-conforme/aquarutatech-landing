@@ -90,7 +90,7 @@ export default function Contact() {
                   <Phone size={16} /> +593 98 065 9712
                 </a>
                 <a href="mailto:contacto@aquarutatech.com" className="flex items-center gap-2 hover:text-primary transition-colors">
-                  <Mail size={16} /> contacto@aquarutatech.com
+                  <Mail size={16} /> soporte@aquarutatech.com
                 </a>
                 <div className="flex items-center gap-2">
                   <Clock3 size={16} /> Lun-Vie (08:00 - 18:00)
